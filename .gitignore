@@ -1,0 +1,25 @@
+# Ignore dist folder
+/dist
+
+# Node dependencies
+/node_modules
+
+# Testing coverage
+/coverage
+
+# macOS system files
+.DS_Store
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (local dev)
+.env*.local
+
+# TypeScript build info files
+*.tsbuildinfo
+
+# Miscellaneous
+*.pem
