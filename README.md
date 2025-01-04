@@ -337,17 +337,6 @@ Example w/ Default Values:
 
 ---
 
-## Roadmap
-
-Planned features for future releases:  
-- **MeshParticle Component**: Instanced meshes as particles for more advanced visuals.  
-- **Color Sampling**: Allow particles to inherit colors from meshes or textures.  
-- **Lighting**: Allow particles to be affected by scene lighting.
-- **Scene Collisions**: Allow for particle collisions with scene using depth buffer
-- **Strength over time**: Option for strength over time to give move control with forces.
-
----
-
 ## Imperative API & Particle Bursts  
 
 Refs of `ParticleSystem` can be used to expose it's imperative API. Available methods are `stop()`, `start()`, and `createBurst()`. After stopping the system, `createBurst(numParticles)` can be used to create a burst of particles at runtime.
@@ -377,7 +366,21 @@ return (
 );
 ``` 
 
+---
+
+## Roadmap
+
+Planned features for future releases:  
+- **MeshParticle Component**: Instanced meshes as particles for more advanced visuals.  
+- **Color Sampling**: Allow particles to inherit colors from meshes or textures.  
+- **Lighting**: Allow particles to be affected by scene lighting.
+- **Scene Collisions**: Allow for particle collisions with scene using depth buffer
+- **Strength over time**: Option for strength over time to give move control with forces.
+
+---
+
 ## License
 
 MIT License
 
+---
