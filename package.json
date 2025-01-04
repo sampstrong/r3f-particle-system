@@ -41,5 +41,21 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "three.js",
+    "r3f",
+    "particle",
+    "system",
+    "particles",
+    "three-fiber",
+    "react-three-fiber",
+    "webgl",
+    "simulation",
+    "gpu",
+    "emitter",
+    "forces",
+    "fbo"
   ]
 }
