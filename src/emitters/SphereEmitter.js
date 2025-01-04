@@ -1,7 +1,3 @@
-
-// random points within a sphere
-// or random points at the edge of a sphere
-
 import React, { useContext, useLayoutEffect } from "react";
 import { ParticleSystemContext } from "../system/ParticleSystemContext.js"
 import { createDataTexture, createSpherePositions } from "../helpers/FBOHelpers";

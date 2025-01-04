@@ -1,5 +1,3 @@
-// spawn at edge or randomly inside
-
 import React, { useContext, useLayoutEffect } from "react"
 import { ParticleSystemContext } from "../system/ParticleSystemContext.js"
 import { createBoxPositions, createDataTexture } from "../helpers/FBOHelpers.js";
@@ -9,15 +7,13 @@ export function BoxEmitter({
     spawnRate   = 500, 
     life        = [ 1.0, 5.0 ],
     speed       = [ 0.5, 2.0 ],
-    xLength     = 1,
-    yLength     = 0,
-    zLength     = 1
+    bounds      = [ 1, 1, 1 ],
 }) {
 
     const systemCtx = useContext(ParticleSystemContext);
 
     useLayoutEffect(() => {
-        const initData = createBoxPositions(size, xLength, yLength, zLength);
+        const initData = createBoxPositions(size, bounds[0], bounds[1], bounds[2]);
         const initTex = createDataTexture(initData);
 
         const minLife = Array.isArray(life) ? life[0] : life;

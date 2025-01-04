@@ -5,12 +5,6 @@ import { createDataTexture, randomizeData, shufflePositionsAndNormals } from "..
 import { MeshSurfaceSampler } from 'three/addons/math/MeshSurfaceSampler.js';
 import { useThree } from "@react-three/fiber";
 
-// takes the shape of any mesh
-// maybe change to just geometry?
-// would be cool to incorporate vertex colors of material somehow...
-
-// sampleMode sequencial, shuffled, random
-
 export function MeshEmitter({
     size        = 128,
     children    = null,

@@ -2,11 +2,6 @@ import * as THREE from 'three';
 import React, { useContext, useLayoutEffect } from "react"
 import { ParticleSystemContext } from "../system/ParticleSystemContext.js"
 
-// props
-// center - vector3
-// axis - XY, XZ, YZ
-
-
 export function RotationalForce({ 
     center = [ 0, 0, 0 ], 
     axis = 'xz', 

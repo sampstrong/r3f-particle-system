@@ -5,7 +5,6 @@ import { createDataTexture } from '../helpers/FBOHelpers';
 import { useThree } from '@react-three/fiber';
 import SmoothCurve from '../misc/SmoothCurve.js';
 
-// sample mode - sequential or random
 
 export function CurveEmitter({ 
     curve            = null,

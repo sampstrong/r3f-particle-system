@@ -6,12 +6,6 @@ import { readPixelBuffer } from "../helpers/FBOHelpers";
 import { FBOSimulationContext, FBOSimulationContextProvider } from "./FBOSimulationContext";
 import { useAppStatus } from '../helpers/appStatus.js';
 
-// should probably just use typescript and do real type checking
-export const FBOChildType = {
-    Shader: 0,
-    Points: 1,
-    InstancedMesh: 2
-}
 
 export const FBOSimulation = forwardRef((props, ref) => {
     return (

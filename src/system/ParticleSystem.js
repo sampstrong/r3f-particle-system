@@ -28,9 +28,6 @@ export const ParticleSystem = forwardRef((props, ref) => {
 const SystemManager = forwardRef(({ 
     simulationSpace = 'local', 
     normalizeForces = false, 
-    depthWrite = false,
-    depthTest = true,
-    blending = THREE.NormalBlending,
     children 
 }, ref) => {
 
@@ -561,9 +558,9 @@ const SystemManager = forwardRef(({
                     uniforms={ pointsUniforms }
                     vertexShader={ pointsShader.vertex }
                     fragmentShader={ pointsShader.fragment }
-                    depthTest={ depthTest }
-                    depthWrite={ depthWrite }
-                    blending={ blending }
+                    depthTest={ systemCtx.particleData.depthTest }
+                    depthWrite={ systemCtx.particleData.depthWrite }
+                    blending={ systemCtx.particleData.blending }
                     transparent
                 />
             </FBOSimulation> }

@@ -1,5 +1,3 @@
-// layout along fbo grid so we can easily see the particles based on index/fbo layout
-
 import React, { useContext, useLayoutEffect } from "react"
 import { ParticleSystemContext } from "../system/ParticleSystemContext.js"
 import { createDataTexture, createDebugPositions } from "../helpers/FBOHelpers";

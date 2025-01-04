@@ -1,6 +1,6 @@
 {
   "name": "r3f-particle-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -10,9 +10,6 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
-  },
-  "directories": {
-    "lib": "lib"
   },
   "peerDependencies": {
     "@react-three/drei": "^9.101.0",
@@ -28,6 +25,10 @@
     "build": "npm run build:types && npm run build:js",
     "postbuild": "node updateImports.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sampstrong/r3f-particle-system.git"
+  },
   "author": "Sam Strong",
   "license": "MIT",
   "devDependencies": {
@@ -37,5 +38,8 @@
     "@babel/preset-typescript": "^7.26.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

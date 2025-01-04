@@ -50,4 +50,3 @@ export const FBOPointsRenderer = forwardRef((props, ref) => {
         </>
     );
 });
-FBOPointsRenderer.childType = FBOChildType.Points;

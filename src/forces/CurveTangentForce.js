@@ -2,13 +2,11 @@ import * as THREE from 'three'
 import React, { useContext, useLayoutEffect } from "react";
 import { ParticleSystemContext } from "../system/ParticleSystemContext";
 
-// direction 1 or -1
-// randomization from 0 to 1 - random deviation from tangent per particle
-
 export function CurveTangentForce({ 
     direction = 1, 
     randomAmt = 0.25, 
-    strength = 1 }) {
+    strength = 1 
+}) {
 
     const systemCtx = useContext(ParticleSystemContext);
 

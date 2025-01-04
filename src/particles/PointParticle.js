@@ -2,25 +2,15 @@ import React, { memo, useContext, useLayoutEffect, useMemo, useRef } from "react
 import * as THREE from 'three';
 import { ParticleSystemContext } from "../system/ParticleSystemContext"
 
-// props
-// colors - pass in array
-// colormode - different ways to use colors
-// shape - square, circle, softCircle, point, or could have different shapes with softness levels
-// sizes - array
-// sizeMode
-// texture
-
-// colorModes
-// overLife
-// random
-// colorsplit - separate channels
-
 export const PointParticle = memo(({ 
     shape            = 'circle', 
     color            = 'blue', 
     colorMode        = 'overLife', 
-    size             = 59, 
-    alphaFade        = 1
+    size             = 50, 
+    alphaFade        = 1,
+    depthWrite       = false,
+    depthTest        = true,
+    blending         = THREE.NormalBlending,
 }) => {
 
     const systemCtx = useContext(ParticleSystemContext);
@@ -58,7 +48,10 @@ export const PointParticle = memo(({
             minSize, 
             maxSize, 
             fadeIn, 
-            fadeOut 
+            fadeOut,
+            depthWrite,
+            depthTest,
+            blending
         }
 
         if (JSON.stringify(newParticleData) !== JSON.stringify(prevParticleData.current)) {

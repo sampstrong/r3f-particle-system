@@ -30,4 +30,3 @@ export const FBOSimulationShader = forwardRef(({ uniformKey = 'uFBO', ...props }
 
     return <>{ reactNode }</>
 });
-FBOSimulationShader.childType = FBOChildType.Shader;

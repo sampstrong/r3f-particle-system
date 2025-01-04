@@ -1,15 +1,6 @@
-
-// could be towards point, away from point, 2D, 3D...
 import * as THREE from 'three';
 import React, { useContext, useLayoutEffect, useRef } from "react"
 import { ParticleSystemContext } from "../system/ParticleSystemContext"
-
-// props
-// position
-// direction - towards, away
-// axis - xy, xz, yz, xyz
-
-// would be cool to make this dynamic so it can follow mouse position...
 
 export function PointForce({ 
     position = [ 0, 0, 0 ], 
