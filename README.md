@@ -4,7 +4,26 @@ A declarative particle system for React Three Fiber. It uses an FBO Simulation t
 
 ## Installation
 
-Install the package via npm:  
+### Install Peer Dependencies
+
+This package relies on the following peer dependencies. You need to have them installed in your project:
+
+| Package              | Required Version |
+|----------------------|------------------|
+| `@react-three/drei`  | `^9.101.0`       |
+| `@react-three/fiber` | `^8.15.19`       |
+| `react`              | `^18`            |
+| `three`              | `^0.170.0`       |
+
+To install all the required peer dependencies for with this package, run the following command:
+
+```bash
+npm install @react-three/drei@^9.101.0 @react-three/fiber@^8.15.19 react@^18 three@^0.170.0
+```
+
+### Install Package
+
+Once peer dependencies are installed, install the package:
 ```bash
 npm install r3f-particle-system
 ```

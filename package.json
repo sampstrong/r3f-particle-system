@@ -1,6 +1,6 @@
 {
   "name": "r3f-particle-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -15,9 +15,7 @@
     "@react-three/drei": "^9.101.0",
     "@react-three/fiber": "^8.15.19",
     "react": "^18",
-    "react-dom": "^18",
-    "three": "^0.170.0",
-    "typescript": "^5.4.3"
+    "three": "^0.170.0"
   },
   "scripts": {
     "build:types": "tsc --emitDeclarationOnly",
