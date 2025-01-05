@@ -1,10 +1,11 @@
 # r3f-particle-system
 
-A declarative particle system for React Three Fiber. It uses an FBO Simulation to provide incremental updates to particles, allowing an intuitive API with use of forces. **Note**: This package is experimental and may introduce breaking changes in future releases.
+A declarative particle system for React Three Fiber. It uses an FBO Simulation to provide incremental updates to particles, allowing for an intuitive API with use of forces. **Note**: This package is experimental and may introduce breaking changes in future releases.
+
+[Check out the demo](https://r3f-particle-system-examples.vercel.app/) to see it in action! This is just one of many possible configurations for this tool.
+
 
 ## Installation
-
-### Install Peer Dependencies
 
 This package relies on the following peer dependencies. You need to have them installed in your project:
 
@@ -14,6 +15,9 @@ This package relies on the following peer dependencies. You need to have them in
 | `@react-three/fiber` | `^8.15.19`       |
 | `react`              | `^18`            |
 | `three`              | `^0.170.0`       |
+
+
+### Install Peer Dependencies
 
 To install all the required peer dependencies for with this package, run the following command:
 
